@@ -1,0 +1,141 @@
+/*ESTILOS GENERALES*/
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Helvetica, Arial;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+/* BANNER PRINCIPAL */
+
+.banner{
+  width: 100%;
+  height: 508px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.banner-centrado{
+  width: 98%;
+  height: 100%;
+  background-image: url(img/LogoLicores.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.titulo{
+  width: 400px;
+  height: 200px;
+  background-image: url(img/Aguardiente.png);
+  opacity: 90%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.TiposA{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Agu{
+  width: 30%;
+  height: 400px;
+  border: 2px solid gray;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: rgba(20, 22, 82, 0.87);
+}
+
+.Agu img{
+  width: 78%;
+  height: 70%;
+}
+
+.Agu p{
+  height: 10%;
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 3px black;
+  padding: 5px;
+  border-radius: 10px;
+  opacity: 80%;
+}
+
+.Agu h3{
+  height: 10%;
+  font-size: 25px;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 2px 3px black;
+  padding: 5px;
+  border-radius: 10px;
+  opacity: 80%;
+}
+
+
+
+@media all and (max-width:1024px){
+
+  .banner{
+    height: 200px;
+  }
+
+  .banner-centrado{
+    width: 100%;
+    height: 200px;
+    background-image: url(img/LogoLicores.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+  }
+
+  .titulo{
+    width: 350px;
+    height: 150px;
+  }
+
+  .Agu{
+    width: 48%;
+    height: 300px;
+  }
+
+  .Agu p{
+    font-size: 14px;
+    text-align: center;
+  }
+}
+/* FIN DE BANNER PRINCIPAL */

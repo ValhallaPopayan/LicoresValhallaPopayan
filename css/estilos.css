@@ -1,0 +1,201 @@
+/*ESTILOS GENERALES*/
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Helvetica, Arial;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+/* BANNER PRINCIPAL */
+
+.banner{
+  width: 100%;
+  height: 508px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.banner-centrado{
+  width: 98%;
+  height: 100%;
+  background-image: url(img/LogoLicores.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.titulo{
+  width: 400px;
+  height: 200px;
+  background-image: url(img/titulo.png);
+  opacity: 90%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner1{
+  width: 100%;
+  height: 500px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.banner1 .banner-mitad{
+  width: 49%;
+  height: 100%;
+  background-image: url(img/PagosValhalla.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 6px solid rgb(20, 22, 15);
+}
+
+.banner1 .licores{
+  width: 49%;
+  height: 100%;
+  background-image: url(img/T2.jpg);
+  background-size: cover;
+  border: 6px solid rgb(20, 22, 15);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.banner1 .licores .caja-color{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.67);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.banner1 .licores h2{
+  font-weight: 700;
+  color: white;
+  text-overflow: clip;
+  text-transform: uppercase;
+  width: 240px;
+  height: 20px;
+  text-align: center;
+  background-image: url(img/FTitulo1.jpg);
+  opacity: 60%;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner1 .licores h3{
+  width: 240px;
+  height: 50px;
+  font-size: 25px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  background-color: rgba(8, 8, 8, 0.87);
+  padding: 30px;
+  border: 6px solid rgb(44, 57, 175);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner1 .licores h3 a{
+  text-decoration: none;
+  color: white;
+}
+
+.banner1 .licores h3:hover{
+  background-color: rgba(15, 78, 205, 0.5);
+}
+
+@media all and (max-width:1024px){
+
+  .banner{
+    height: 200px;
+  }
+
+  .banner-centrado{
+    width: 100%;
+    height: 200px;
+    background-image: url(img/LogoLicores.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+  }
+
+  .titulo{
+    width: 350px;
+    height: 150px;
+  }
+
+  .banner1{
+    height: 680px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .banner1 .banner-mitad{
+    width: 98%;
+    height: 48%;
+    background-size: contain;
+    border: 0px;
+  }
+
+  .banner1 .licores{
+    width: 99%;
+    height: 50%;
+    background-position: center;
+  }
+
+  .banner1 .licores .caja-color{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .banner1 .licores h2{
+    width: 95%;
+    height: 10px;
+  }
+
+  .banner1 .licores h3{
+    font-size: 20px;
+    width: 45%;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid rgb(44, 57, 175);
+  }
+
+}
+/* FIN DE BANNER PRINCIPAL */
